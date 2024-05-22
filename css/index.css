@@ -1,0 +1,275 @@
+a {
+  /* color: #76bc21; */
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  top: -80px;
+  height: 110vh;
+  background: url(../images/gradient-geometric-design-on-dark-background_23-2148425667.jpg)
+    no-repeat center;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+}
+
+.header-background {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 50%);
+  z-index: 1;
+}
+
+.header-top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: rgba(0, 0, 0, 50%);
+
+  color: #fff;
+  z-index: 3;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.header-top a:hover {
+  color: #76bc21;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: 900;
+  margin-right: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+
+  color: #fff;
+}
+
+.menu-element {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.menu-element:last-child {
+  margin-right: 0;
+}
+
+.header-center {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.header-center__wrapper {
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 50%);
+  padding: 10px 0;
+}
+
+.name {
+  font-size: 44px;
+  line-height: 45px;
+}
+
+.description {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.5em;
+  border-right: 3px solid transparent;
+  font-family: Courier, monospace;
+  width: 58ch;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: cursor 0.75s 6, print-text 3s steps(58);
+}
+
+@keyframes cursor {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes print-text {
+  from {
+    width: 0;
+  }
+}
+
+.about-me {
+  display: flex;
+}
+
+.about-me .left {
+  flex: 1 1 40%;
+  padding-right: 40px;
+}
+.about-me .right {
+  flex: 1 1 60%;
+}
+
+.about-me__image {
+  width: 300px;
+  margin-left: auto;
+  border-radius: 20px;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 50%));
+}
+
+.about-me__title {
+  font-size: 36px;
+}
+
+.about-me__decription {
+  font-size: 1.25em;
+  color: #262626;
+  margin-bottom: 15px;
+}
+
+.about-me__extra {
+  color: #262626;
+  font-size: 20px;
+}
+
+.about-me__extra-element {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.about-me__extra-element:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-me__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.about-me__icon svg {
+  color: #76bc21;
+}
+
+.interests {
+  padding: 40px 0;
+}
+
+.interests__list {
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interest-image {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.interest-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: center;
+}
+
+.contact-me__form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.submit {
+  display: block;
+  height: 45px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  background: #76bc21;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.25s ease;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.submit:hover {
+  opacity: 1;
+}
+
+.input-wrapper {
+  display: inline-block;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
